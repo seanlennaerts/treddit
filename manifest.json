@@ -8,16 +8,16 @@
     "content_scripts": [
         {
             "matches": ["https://trello.com/b/*"],
-            "js": ["jquery-3.3.1.min.js", "content.js"]
+            "js": ["js/jquery-3.3.1.min.js", "js/content.js"]
         }
     ],
 
-    "options_page": "options.html",
+    "options_page": "html/options.html",
     "page_action": {
-        "default_popup": "popup.html"
+        "default_popup": "html/popup.html"
     },
     "background": {
-        "scripts": ["background.js"],
+        "scripts": ["js/background.js"],
         "persistent": false
     },
     "permissions" : [

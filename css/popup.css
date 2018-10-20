@@ -3,7 +3,7 @@ body {
 }
 
 .loading {
-    background-image: url(spinner.gif);
+    background-image: url(../assets/spinner.gif);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -69,4 +69,8 @@ label:hover {
 
 [type=radio]:checked + label + .content {
     display: inline-block;
+}
+
+.my-select-picker {
+    
 }

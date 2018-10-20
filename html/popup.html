@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Treddit</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class=headers>
+        <input type="radio" id="r1" name="t" checked>
+        <label class="tab-header" for="r1">Images</label>
+        
+        <div class="content" id="images-tab-body">
+            <input type="text" class="form-control input-loading" id="input-images" placeholder="r/EarthPorn" autofocus spellcheck="false">
+            <small id="num-images" class="text-muted"></small>
+            <div class="mt-3 btn-group btn-group-sm d-flex" role="group">
+                <button type="button" class="btn btn-secondary w-100" id="cover">Cover</button>
+                <button type="button" class="btn btn-secondary w-100" id="center">Center</button>
+                <button type="button" class="btn btn-secondary w-100" id="tile">Tile</button>
+            </div>
+            <div class ="mt-3">
+                <select id="delay-picker">
+                    <option value=5>5 seconds</option>
+                    <option value=10>10 seconds</option>
+                    <option value=60>1 minute</option>
+                    <option value=300>5 minutes</option>
+                    <option value=900>15 minutes</option>
+                    <option value=1800>30 minutes</option>
+                    <option value=1>1 hour</option>
+                </select>
+            </div>
+        </div>
+
+
+        <input type="radio" id="r2" name="t">
+        <label class="tab-header" for="r2">Gfycats</label>
+        
+        <div class="content" id="gfycats-tab-body">
+            <input type="text" class="form-control input-loading" id="input-gfycats" placeholder="r/HighQualityGifs" autofocus spellcheck="false">
+            <small id="num-images" class="text-muted"></small>
+        </div>
+
+        <div id="slider"></div>
+    </div>
+
+    <script src="../js/popup.js"></script>
+
+</body>
+
+</html>
