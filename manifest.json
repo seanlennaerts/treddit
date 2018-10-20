@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Treddit - Backgrounds for Trello",
+    "version": "0.1",
+
+    "description": "Use images from reddit as background on Trello",
+
+    "content_scripts": [
+        {
+            "matches": ["https://trello.com/b/*"],
+            "js": ["jquery-3.3.1.min.js", "content.js"]
+        }
+    ],
+
+    "options_page": "options.html",
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions" : [
+        "declarativeContent",
+        "https://www.reddit.com/",
+        "https://*/"
+    ]
+}

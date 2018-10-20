@@ -1,0 +1,72 @@
+body {
+    height: 20rem;
+}
+
+.loading {
+    background-image: url(spinner.gif);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.headers [type=radio] {
+    display:none;
+}
+
+.headers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content {
+    position: absolute;
+    top: 3rem;
+    padding: 1rem;
+    /* transition: transform 0.3s; */
+    display: none;
+}
+
+#slider {
+    position: absolute;
+    border-bottom: 0.2rem solid #007bff;
+    width: 5rem;
+    transition: transform 0.3s;
+    padding-top: 2.5rem;
+}
+
+.tab-header {
+    padding-top: 0.5rem;
+    font-weight: bold;
+    width: 8rem;
+    text-align: center;
+}
+
+.input-loading {
+    padding-right: 2rem;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+[type=radio],#r1:checked ~ #slider {
+    transform: translate(-4rem, 0rem);
+}
+
+[type=radio],#r2:checked ~ #slider {
+    transform: translate(4rem, 0rem);
+}
+
+/* [type=radio],#r1:checked ~ #images-tab-body {
+    transform: translate(15rem, 0rem);
+}
+
+[type=radio],#r2:checked ~ #gfycats-tab-body {
+    transform: translate(-15rem, 0rem);
+} */
+
+
+
+[type=radio]:checked + label + .content {
+    display: inline-block;
+}
