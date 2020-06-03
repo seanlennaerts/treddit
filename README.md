@@ -1,7 +1,9 @@
-# todo
+# Treddit
 
-- [x] credit with direct link to post in bototm left corder
-- [ ] save setting per board
-- [ ] way to remove from a board?
-- [x] slideshow speed
-- [ ] crossfade images
+A Google Chrome extension that lets you use images and gyfs from your favorite subreddits as your Trello background.
+
+![gif of extension in action](https://thumbs.gfycat.com/PersonalAmusingBettong-size_restricted.gif)
+
+## Installation
+
+Install directly from the Chrome Web Store
